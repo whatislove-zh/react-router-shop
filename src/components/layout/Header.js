@@ -8,9 +8,10 @@ const Header = () => {
         Green Shop
       </Link>
       <nav className="nav">
+        <NavLink to="catalog">Catalog</NavLink>
         <NavLink to="about">About</NavLink>
         <NavLink to="contacts">Contacts</NavLink>
-        <NavLink to="test">test</NavLink>
+        <NavLink to="test">404</NavLink>
       </nav>
     </header>
   );
