@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import About from "./components/About";
-import Home from "./components/Home";
+import About from "./components/About/About";
+import Catalog from "./components/Catalog/Catalog";
+import CatalogItem from "./components/Catalog/CatalogItem";
+import Contacts from "./components/Contacts/Contacts";
+import Home from "./components/Home/Home";
 import MainLayout from "./components/layout/MainLayout";
 import NotFound from "./components/NotFound";
 
@@ -10,9 +13,14 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
+
+          <Route path="catalog" element={<Catalog />} />
+
+          <Route path="catalog/:slug" element={<CatalogItem />} />
+
           <Route path="about" element={<About />} />
 
-          <Route path="contacts" element={<About />} /> 
+          <Route path="contacts" element={<Contacts />} /> 
         
           <Route path="*" element={<NotFound />} />
         </Route>
