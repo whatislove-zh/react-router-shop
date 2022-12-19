@@ -66,3 +66,40 @@
   overflow: hidden;
   margin-bottom: 15px;
 }
+
+/*////////////////////////////////////////////////////////////*/
+
+.productInfo{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.productInfo section{
+  margin: 40px;
+  
+  max-width: 500px;
+}
+
+.image{
+  height: 400px;
+  
+  margin: 40px;
+}
+
+.title{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.price{
+  color: #067118;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.description{
+  font-size: 20px;
+  
+}
