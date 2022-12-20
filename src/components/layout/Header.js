@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import { BsCart } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -8,8 +9,10 @@ const Header = () => {
         Green Shop
       </Link>
       <nav className="nav">
+        
+        <NavLink to="shoping-cart"> <BsCart /> </NavLink>
         <NavLink to="catalog">Catalog</NavLink>
-        <NavLink to="about">About</NavLink>
+        <NavLink to="about">About Us</NavLink>
         <NavLink to="contacts">Contacts</NavLink>
         <NavLink to="test">404</NavLink>
       </nav>
