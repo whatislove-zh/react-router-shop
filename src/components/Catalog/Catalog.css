@@ -51,8 +51,7 @@
   transform: scale(1.05);
 }
 
-.productsItem h3,
-.productsItem b {
+.productsItem h3{
   margin: 10px 20px;
   color: #333;
 }
@@ -103,3 +102,11 @@
   font-size: 20px;
   
 }
+
+.priceSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+
