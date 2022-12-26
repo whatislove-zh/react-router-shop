@@ -14,12 +14,12 @@ const Contscts = () => {
         Email: <span>vladislavfrontdev@gmail.com</span>
       </p>
       <p>
-        <a href="https://github.com/whatislove-zh/reactshop">
+        <a href="https://github.com/whatislove-zh/reactshop" target="_blank" rel="noreferrer">
           Наш репозиторій у github
         </a>
       </p>
       <p>
-        <a href="https://t.me/vladFrontEndDev">
+        <a href="https://t.me/vladFrontEndDev" target="_blank" rel="noreferrer">
           Натисніть щоб написати нам через Telegram
         </a>
       </p>
