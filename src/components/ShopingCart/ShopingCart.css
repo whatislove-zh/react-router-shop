@@ -1,0 +1,101 @@
+.shopingCart {
+  width: 100%;
+}
+
+.shopingCartItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.shopingCartItem img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  margin: 5px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.shopingCartItem img:hover {
+  transform: scale(1.1);
+}
+.cartProductInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 50px;
+}
+
+.cartProductInfo section {
+  min-width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin: 15px 20px;
+}
+
+.cartProductInfo section .cartCounter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: max-content;
+  min-width: max-content;
+}
+
+.cartCounter input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.cartCounter p {
+  margin: 0 15px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.cartCounter p:hover{
+    transform: scale(1.5);
+}
+
+.minusBtn {
+  color: rgb(218, 44, 9);
+  user-select: none;
+  
+}
+.plussBtn{
+    color: #067118;
+    user-select: none;
+}
+.deleteBtn{
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  background: none;
+  padding: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}

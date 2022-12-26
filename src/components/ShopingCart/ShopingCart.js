@@ -1,17 +1,28 @@
-const ShopingCart = ({ shopingCartProducts }) => {
+import { useState } from "react";
+import "./ShopingCart.css";
+import ShopingCartItem from "./ShopingCartItem";
 
+const ShopingCart = ({ shopingCartProducts, removeFromCart }) => {
+  const [summa, setSumma] = useState(0);
+
+  if (shopingCartProducts.length === 0) {
+    return <h1>Shoping Cart is empty</h1>;
+  }
 
   return (
-    <div>
+    <section className="shopingCart">
       {shopingCartProducts.map((product) => {
         return (
-          <section key={product.id}>
-            <p>{product.title}</p>
-            
-          </section>
+          <ShopingCartItem
+            key={product.id}
+            product={product}
+            setSumma={setSumma}
+            removeFromCart={removeFromCart}
+          />
         );
       })}
-    </div>
+      <p>Total: {summa} $</p>
+    </section>
   );
 };
 
