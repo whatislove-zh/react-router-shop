@@ -83,8 +83,8 @@
 
 .image{
   height: 400px;
-  
   margin: 40px;
+  object-fit: contain;
 }
 
 .title{
