@@ -20,12 +20,15 @@ function App() {
         flag = false;
         return false;
       }
-
       return false;
     });
 
     flag && setShopingCartProducts((prev) => [...prev, product]);
   };
+
+  const removeFromCart = (id) => {
+    setShopingCartProducts((prev) => prev.filter(el => el.id !== id))
+  }
 
   return (
     <section className="wrapper">
@@ -45,7 +48,7 @@ function App() {
 
           <Route
             path="shoping-cart"
-            element={<ShopingCart shopingCartProducts={shopingCartProducts} />}
+            element={<ShopingCart shopingCartProducts={shopingCartProducts} removeFromCart={removeFromCart} />}
           />
 
           <Route path="*" element={<NotFound />} />
